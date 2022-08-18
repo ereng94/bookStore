@@ -4,6 +4,7 @@ import { SharedModule } from '../shared/shared.module';
 import { BookRoutingModule } from './book-routing.module';
 import { BookComponent } from './book.component';
 
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap'; // add this line for ngdatepicker
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { BookComponent } from './book.component';
   ],
   imports: [
     SharedModule,
-    BookRoutingModule
+    BookRoutingModule,
+    NgbDatepickerModule
   ]
 })
 export class BookModule { }
